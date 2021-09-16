@@ -16,19 +16,51 @@
 
 //  // 결과 : John
 
-//  return;
+//
 
-// Falsy
+// // Falsy
+// function print(person) {
+//     console.log(person.name);
+// }
+
+// const person = {
+//     name: 'John',
+// };
+
+// print();
+
+// // 결과 : undifined
+
+//
+
+// // Nothing
+// function print(person) {
+//     if (person === undefined) {
+//         return;
+//     }
+//     console.log(person.name);
+// }
+
+// const person = {
+//     name: 'John',
+// };
+
+// print();
+
+// // 결과 :
+
+//
+
+// null
 function print(person) {
+    if (person === undefined) {
+        return;
+    }
     console.log(person.name);
 }
 
-const person = {
-    name: 'John',
-};
+const person = null;
 
-print();
+print(person);
 
-// 결과 : undifined
-
-return;
+// 결과 : null
