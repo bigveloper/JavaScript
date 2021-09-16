@@ -169,7 +169,7 @@
 
 // const value = []; // 숫자, 객체, 문자 등등
 
-// const truthy = !!value; // !!(느낌표 두개) 를 붙혀주면 된다. 앞에
+// const truthy = !!value;     // 앞에 !!(느낌표 두개) 를 붙혀주면 된다.
 // console.log(truthy);
 // // 결과 : true
 
@@ -177,4 +177,4 @@ const value = 0;
 
 const truthy = !!value;
 console.log(truthy);
-// 결과 : true
+// 결과 : false
