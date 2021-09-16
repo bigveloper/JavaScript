@@ -3,20 +3,20 @@
 // Truthy : true 같은것
 // Falsy  : false 같은것
 
-// Truthy
-// function print(person) {
-//     console.log(person.name);
-// }
+// // Truthy
+//  function print(person) {
+//      console.log(person.name);
+//  }
 
-// const person = {
-//     name: 'John',
-// };
+//  const person = {
+//      name: 'John',
+//  };
 
-// print(person);
+//  print(person);
 
-// // 결과 : John
+//  // 결과 : John
 
-// return;
+//  return;
 
 // Falsy
 function print(person) {
@@ -28,5 +28,7 @@ const person = {
 };
 
 print();
+
+// 결과 : undifined
 
 return;
