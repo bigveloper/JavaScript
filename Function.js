@@ -44,12 +44,43 @@
 // // 결과 : Hello WhyJ!
 
 // 다만, return 을 사용하게 되면 함수(function) 은 종료된다.
-function hello(name) {
-    return `Hello ${name}!`;
-}
-const result = hello('WhyJ');
-console.log(result);
+// function hello(name) {
+//     return `Hello ${name}!`;
+//     console.log(name)
+//     return
+// }
+// const result = hello('WhyJ');
+// console.log(result);
+
+// return 으로 종료되었기 때문에, return 아래 {} 블록 안에선 어떠한 기능도 수행하지 않는다.
 
 //
 //
 //
+
+function getGrade(score) {
+    if (score === 100) {
+        return 'A+';
+    } else if (score >= 90) {
+        return 'A';
+    } else if (score === 89) {
+        return 'B+';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score === 79) {
+        return 'C+';
+    } else if (score >= 70) {
+        return 'C';
+    } else if (score === 69) {
+        return 'D+';
+    } else if (score >= 60) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
+
+const grade = getGrade(30);
+console.log(grade);
+
+// 결과 : 30
