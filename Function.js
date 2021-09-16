@@ -27,8 +27,20 @@
 // {} 중괄호 안에서는 실행구문 을 선언한다.
 
 // ES6 Version
+// 리터럴(Template Literal)
+// ` ` (백틱) 사용
+// function hello(name) {
+//     console.log(`Hello ${name}!`);
+// }
+// hello('WhyJ');
+// // 결과 : Hello WhyJ!
+
+// return 을 사용 할 수도 있다.
 function hello(name) {
-    console.log(`Hello ${name}!`);
+    return `Hello ${name}!`;
 }
-hello('WhyJ');
+const result = hello('WhyJ');
+console.log(result);
 // 결과 : Hello WhyJ!
+
+// 다만, return 을 사용하게 되면 함수(function) 은 종료된다.
