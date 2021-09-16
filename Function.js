@@ -90,9 +90,18 @@
 
 // 화살표 함수 (Arrow Function)
 // 화살표 함수의 기본 모양 ()=>{}
+// const add = (a, b) => {
+//     return a + b;
+// };
+// const sum = add(1, 2);
+// console.log(sum);
+// // 결과 : 3
+
 const add = (a, b) => {
     return a + b;
 };
-const sum = add(1, 2);
-console.log(sum);
-// 결과 : 3
+const hello = (name) => {
+    console.log(`Hello, ${name}!`);
+};
+hello('WhyJ');
+// 결과 : Hello, WhyJ!
