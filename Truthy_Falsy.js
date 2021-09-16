@@ -153,14 +153,28 @@
 // value 값이 Truthy 하면 true 로, Falsy 하면 False 로 바꾸어 보자
 // 삼항연산자 ? : 를 사용할 것이다.
 
-const value = null;
+// const value = null;
 
-const truthy = value ? true : false;
-console.log(truthy);
-// 결과 : false
+// const truthy = value ? true : false;
+// console.log(truthy);
+// // 결과 : false
 
-const value = [];
+// const value = []; // 숫자, 객체, 문자 등등
 
-const truthy = value ? true : false;
+// const truthy = value ? true : false;
+// console.log(truthy);
+// // 결과 : true
+
+// 꼭 삼항연산자를 사용하지 않아도 된다.
+
+// const value = []; // 숫자, 객체, 문자 등등
+
+// const truthy = !!value; // !!(느낌표 두개) 를 붙혀주면 된다. 앞에
+// console.log(truthy);
+// // 결과 : true
+
+const value = 0;
+
+const truthy = !!value;
 console.log(truthy);
 // 결과 : true
