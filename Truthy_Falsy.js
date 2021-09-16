@@ -51,9 +51,25 @@
 
 //
 
-// null
+// // null
+// function print(person) {
+//     if (person === undefined) {
+//         return;
+//     }
+//     console.log(person.name);
+// }
+
+// const person = null;
+
+// print(person);
+
+// // 결과 : null
+
+//
+
+// Nothing
 function print(person) {
-    if (person === undefined) {
+    if (person === undefined || person === null) {
         return;
     }
     console.log(person.name);
@@ -63,4 +79,4 @@ const person = null;
 
 print(person);
 
-// 결과 : null
+// 결과 :
