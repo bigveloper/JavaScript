@@ -1,27 +1,32 @@
+//Truthy & Falsy
+
+// Truthy : true 같은것
+// Falsy  : false 같은것
+
 // Truthy
+// function print(person) {
+//     console.log(person.name);
+// }
+
+// const person = {
+//     name: 'John',
+// };
+
+// print(person);
+
+// // 결과 : John
+
+// return;
+
+// Falsy
 function print(person) {
     console.log(person.name);
 }
 
 const person = {
-    name: 'john',
-};
-
-print(person);
-// john 이라는 이름 확인
-
-//
-
-// Falsy
-function print2(person2) {
-    console.log(person2.name2);
-}
-
-const person2 = {
-    name2: 'peter',
+    name: 'John',
 };
 
 print();
-// undefined
 
 return;
