@@ -99,37 +99,44 @@
 
 // // 결과 :
 
-// { undefined || null } 을 사용했을 때와 같은 기능을 해준다.
-// 앞에 ! 가 붙었을때는 true 는 false 로 false 는 true 로 바뀐다.
-console.log(!undefined);
-// true
-console.log(!null);
-// true
-console.log(!0);
-// true
-console.log(!'');
-// true
-console.log(!NaN); // NaN = Not a Number
-// true
-// NaN 이란 예를 들어 숫자를 문자로 나눴을 때 더이상 숫자가 아닌것으로 간주한다.
-const value = 1 / 'a';
-console.log(value);
-// NaN : 숫자가 아닌것
-console.log(!false);
-// true
+// // { undefined || null } 을 사용했을 때와 같은 기능을 해준다.
+// // 앞에 ! 가 붙었을때는 true 는 false 로 false 는 true 로 바뀐다.
+// console.log(!undefined);
+// // true
+// console.log(!null);
+// // true
+// console.log(!0);
+// // true
+// console.log(!'');
+// // true
+// console.log(!NaN); // NaN = Not a Number
+// // true
+// // NaN 이란 예를 들어 숫자를 문자로 나눴을 때 더이상 숫자가 아닌것으로 간주한다.
+// const value = 1 / 'a';
+// console.log(value);
+// // NaN : 숫자가 아닌것
+// console.log(!false);
+// // true
 
-// 즉 undefined, null, 0, '', NaN 이 다섯가지는 false 와 같은 개념으로 Falsy 이다.
+// // 즉 undefined, null, 0, '', NaN 이 다섯가지는 false 와 같은 개념으로 Falsy 이다.
 
-// 그 외 나머지는 다 Truthy 다.
+// // 그 외 나머지는 다 Truthy 다.
 
+// // 예를 들어
+// console.log(!3);
+// // false
+// console.log(!'hello');
+// // false
+// console.log(!['array']);
+// // false
+// console.log(![]);
+// // false
+// console.log(!{});
+// // false
+
+// 꼭 !(느낌표) 를 쓰지 않고도 작성해 볼 수 있다.
 // 예를 들어
-console.log(!3);
-// false
-console.log(!'hello');
-// false
-console.log(!['array']);
-// false
-console.log(![]);
-// false
-console.log(!{});
-// false
+const value = { a: 1 };
+if (value) {
+    console.log('value 가 Truthy 하네요.');
+}
