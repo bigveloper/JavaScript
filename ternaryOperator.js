@@ -1,3 +1,5 @@
+//
+//
 // 삼항 연산자
 
 // condition ? true : false
@@ -32,13 +34,19 @@
 
 //
 
-// 중첩해서 사용하는 삼항 연산자
+// // 중첩해서 사용하는 삼항 연산자
 
-const condition1 = false;
-const condition2 = false;
+// const condition1 = false;
+// const condition2 = false;
 
-const value = condition1 ? '와우!' : condition2 ? 'blabla' : 'foo';
+// const value = condition1 ? '와우!' : condition2 ? 'blabla' : 'foo';
 
-console.log(value);
+// console.log(value);
+// // 결과 : foo
 
-// 결과 : foo
+//
+
+// 중첩해서 사용하는 삼항 연산자는 가급적 잘 사용하지 않는다.
+// 이럴때에는 if 를 사용하는 것이 더 좋을 수 있다.
+//
+//
