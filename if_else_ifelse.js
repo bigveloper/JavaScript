@@ -109,18 +109,19 @@
 
 // else if 는 여러번 사용 할 수 있다.
 
-const a = 7;
+// const a = 7;
 
-if (a === 5) {
-    console.log('5 입니다!');
-} else if (a === 10) {
-    console.log('10 입니다!');
-} else if (a === 7) {
-    console.log('7 입니다!');
-} else {
-    console.log('5도 아니고 10도 아닙니다!');
-}
-// 결과 : 7 입니다!
+// if (a === 5) {
+//     console.log('5 입니다!');
+// } else if (a === 10) {
+//     console.log('10 입니다!');
+// } else if (a === 7) {
+//     console.log('7 입니다!');
+// } else {
+//     console.log('5도 아니고 10도 아닙니다!');
+// }
+// // 결과 : 7 입니다!
+// 위와 같이 else if 는 특정 조건 을 위해 여러번 사용 가능하다.
 
 //
 //
