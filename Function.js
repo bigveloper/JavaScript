@@ -1,8 +1,14 @@
+//
+//
+//
+
 // const a = 1;
 // const b = 2;
 // const sum = a + b;
 // console.log(sum);
 // // 결과 : 3
+
+// funtion
 
 // function add(a, b) {
 //     return a + b;
@@ -108,8 +114,14 @@
 // // 결과 : Hello, WhyJ!
 
 //
-// 한줄로 사용할 때는 return 을 사용하지 않고 바로 적용도 가능하다.
-const add = (a, b) => a + b;
-const sum = add(1, 2);
-console.log(sum);
-// 결과 : 3
+// 한줄로 사용할 때는 return 과 {}를 사용하지 않고 바로 적용도 가능하다.
+// const add = (a, b) => a + b;
+// const sum = add(1, 2);
+// console.log(sum);
+// // 결과 : 3
+
+// 화살표 함수 (Arrow Function) 도 ES6 부터 적용된 키워드 이다.
+
+//
+//
+//
