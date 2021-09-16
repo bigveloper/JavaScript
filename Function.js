@@ -82,7 +82,7 @@
 
 // const grade = getGrade(30);
 // console.log(grade);
-// // 결과 : 30
+// // 결과 : F
 
 //
 //
@@ -97,11 +97,19 @@
 // console.log(sum);
 // // 결과 : 3
 
-const add = (a, b) => {
-    return a + b;
-};
-const hello = (name) => {
-    console.log(`Hello, ${name}!`);
-};
-hello('WhyJ');
-// 결과 : Hello, WhyJ!
+//
+// const add = (a, b) => {
+//     return a + b;
+// };
+// const hello = (name) => {
+//     console.log(`Hello, ${name}!`);
+// };
+// hello('WhyJ');
+// // 결과 : Hello, WhyJ!
+
+//
+// 한줄로 사용할 때는 return 을 사용하지 않고 바로 적용도 가능하다.
+const add = (a, b) => a + b;
+const sum = add(1, 2);
+console.log(sum);
+// 결과 : 3
