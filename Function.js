@@ -36,11 +36,20 @@
 // // 결과 : Hello WhyJ!
 
 // return 을 사용 할 수도 있다.
+// function hello(name) {
+//     return `Hello ${name}!`;
+// }
+// const result = hello('WhyJ');
+// console.log(result);
+// // 결과 : Hello WhyJ!
+
+// 다만, return 을 사용하게 되면 함수(function) 은 종료된다.
 function hello(name) {
     return `Hello ${name}!`;
 }
 const result = hello('WhyJ');
 console.log(result);
-// 결과 : Hello WhyJ!
 
-// 다만, return 을 사용하게 되면 함수(function) 은 종료된다.
+//
+//
+//
