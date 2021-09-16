@@ -67,16 +67,69 @@
 
 //
 
-// Nothing
-function print(person) {
-    if (person === undefined || person === null) {
-        return;
-    }
-    console.log(person.name);
-}
+// // Nothing
+// function print(person) {
+//     if (person === undefined || person === null) {
+//         return;
+//     }
+//     console.log(person.name);
+// }
 
-const person = null;
+// const person = null;
 
-print(person);
+// print(person);
 
-// 결과 :
+// // 결과 :
+
+// 비교 할때마다 undefined 와 null 을 같이 이런식으로 비교하는 방법보다 간단한 방법이 있다.
+
+//
+
+// // Nothing
+// function print(person) {
+//     if (!person) {
+//         return;
+//     }
+//     console.log(person.name);
+// }
+
+// const person = null;
+
+// print(person);
+
+// // 결과 :
+
+// { undefined || null } 을 사용했을 때와 같은 기능을 해준다.
+// 앞에 ! 가 붙었을때는 true 는 false 로 false 는 true 로 바뀐다.
+console.log(!undefined);
+// true
+console.log(!null);
+// true
+console.log(!0);
+// true
+console.log(!'');
+// true
+console.log(!NaN); // NaN = Not a Number
+// true
+// NaN 이란 예를 들어 숫자를 문자로 나눴을 때 더이상 숫자가 아닌것으로 간주한다.
+const value = 1 / 'a';
+console.log(value);
+// NaN : 숫자가 아닌것
+console.log(!false);
+// true
+
+// 즉 undefined, null, 0, '', NaN 이 다섯가지는 false 와 같은 개념으로 Falsy 이다.
+
+// 그 외 나머지는 다 Truthy 다.
+
+// 예를 들어
+console.log(!3);
+// false
+console.log(!'hello');
+// false
+console.log(!['array']);
+// false
+console.log(![]);
+// false
+console.log(!{});
+// false
