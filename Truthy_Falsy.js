@@ -144,8 +144,23 @@
 
 // // value 에 null 을 넣어 보자
 
+// const value = null;
+// if (value) {
+//     console.log('value 가 Truthy 하네요.');
+// }
+// // 결과 : Nothing (아무값도 나타나지 않음)
+
+// value 값이 Truthy 하면 true 로, Falsy 하면 False 로 바꾸어 보자
+// 삼항연산자 ? : 를 사용할 것이다.
+
 const value = null;
-if (value) {
-    console.log('value 가 Truthy 하네요.');
-}
-// 결과 : Nothing (아무값도 나타나지 않음)
+
+const truthy = value ? true : false;
+console.log(truthy);
+// 결과 : false
+
+const value = [];
+
+const truthy = value ? true : false;
+console.log(truthy);
+// 결과 : true
