@@ -136,7 +136,16 @@
 
 // 꼭 !(느낌표) 를 쓰지 않고도 작성해 볼 수 있다.
 // 예를 들어
-const value = { a: 1 };
+// const value = { a: 1 };
+// if (value) {
+//     console.log('value 가 Truthy 하네요.');
+// }
+// // 결과 : value 가 Truthy 하네요.
+
+// // value 에 null 을 넣어 보자
+
+const value = null;
 if (value) {
     console.log('value 가 Truthy 하네요.');
 }
+// 결과 : Nothing (아무값도 나타나지 않음)
