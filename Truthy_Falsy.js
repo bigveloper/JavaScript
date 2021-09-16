@@ -173,8 +173,20 @@
 // console.log(truthy);
 // // 결과 : true
 
-const value = 0;
+// const value = 0;
 
-const truthy = !!value;
-console.log(truthy);
-// 결과 : false
+// const truthy = !!value;
+// console.log(truthy);
+// // 결과 : false
+
+// Falsy 한 값 5개 + false
+// 1. undefined
+// 2. null
+// 3. 0
+// 4. '' (공백, 빈문자열)
+// 5. NaN (Not a Number)
+// + false
+
+// 외에는 모두 Truthy
+
+// 문법은 아니지만 개념적으로 꼭 알고 있으면 좋은 내용이다.
